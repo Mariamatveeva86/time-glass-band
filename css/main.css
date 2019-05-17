@@ -1,0 +1,451 @@
+
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #19202a;
+}
+header{
+    position:absolute;
+    z-index: 3;
+    padding: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+header .logo{
+    margin-left: 15px;
+    width: 40px;
+}
+header .logo img{
+    width: 100%
+}
+header nav{
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+header nav a{
+    font-family: 'Akronim', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0 15px;
+}
+#top-section{
+    position: relative;
+    height: 100vh;
+}
+#top-section .bluredbg{
+    background-image: linear-gradient(45deg, rgba(7, 7, 43, 0.88) 0%,rgba(90, 87, 255, 0.87) 4%,rgba(232, 178, 254, 0.81) 25%,rgba(252,209,255,0.77) 38%,rgba(247, 239, 13, 0.859) 100%), url("https://storage.concert.ua/Jvz/28/UC/5c9c8965539a0/39e4.jpg:31-catalog-event_item-desktop");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    filter: blur(6px) saturate(130%);
+    position: absolute;
+    z-index: 1;
+}
+#top-section .floating-img{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-pack:center;
+    justify-content:left;
+    -ms-flex-align:end;
+    align-items:flex-end;
+}
+#top-section .band-img{
+    width: 40%;
+}
+#top-section .band-img img{
+    width: 250%;
+    filter: contrast(90%);
+    margin-bottom: -5px;
+}
+#bio{
+    display: flex;
+    padding: 50px;
+    background: #010524;
+    position: relative;
+    z-index: 3;
+}
+#bio .container{
+    display: flex;
+}
+#bio p{
+    color: white;
+    line-height: 1.8;
+    font-size: 0.9rem;
+    width: 50%;
+    padding: 0 50px;
+}
+#bio .logo-centered{
+    width: 50%;
+    display: flex;
+    -ms-flex-pack: right;
+    justify-content: right;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 50px;
+}
+#bio .logo-centered img{
+    width: 89%;
+    display: flex;
+}
+
+#media{
+    padding: 100px 0;
+    background-image: url("img/original.jpeg");
+    background-size: cover;
+}
+#media .title{
+    background: #FFDC2C;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: rgb(3, 4, 43);
+}
+#media .videos{
+    padding: 80px 50px 0;
+    margin-left: 50px;
+    margin-right: 150px;
+    display:-ms-grid;display:grid;
+    -ms-grid-columns:50% 50%;
+    grid-template-columns:50% 50%;
+    grid-gap:50px;
+}
+#media .videos .video{
+    border-radius: 4px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 13px 24px -8px rgba(0,0,0,0.75);
+}
+#media .videos .video iframe{
+    height: 100%;
+}
+#music{
+    padding: 5px 0 60px 0;
+    position: relative;
+}
+#music .bluredbg{
+    background-image: linear-gradient(45deg, rgba(132,130,255,0.88) 0%,rgba(132,130,255,0.87) 4%,rgba(238,204,252,0.81) 25%,rgba(252,209,255,0.77) 38%,rgba(255,220,44,0.58) 100%), url("img/album69.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(7px) saturate(100%);
+    position: absolute;
+    z-index: 1;
+}
+#music .container{
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+    z-index: 3;
+}
+#music .info{
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+#music .info .title{
+    padding: 50px 0 25px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#music .info .sub-title{
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+#music .info .singles{
+    width: 400px;
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns:50% 50%;
+    grid-template-columns:50% 50%;
+    margin-bottom: 60px;
+}
+#music .info .singles li{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#music .info .logos{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+#music .album-cover{
+    width: 72%;
+    display: -ms-flexbox;
+    display:flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#music .album-cover img{
+    width: 72%;
+    margin-left: 13px;
+}
+#tour{
+    background: black;
+    position: relative;
+    z-index: 4;
+}#tour .top-img{
+    background-image: url("img/tour4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: contrast(80%);
+    height: 430px;
+}
+#tour .tourdates{
+    background: rgb(3, 4, 43);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 70px 0;
+}
+#tour .tourdates .title{
+    color: #FFDC2C;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 0 80px;
+}
+#tour .tourdates .dates{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+#tour .tourdates .dates li{
+    color: white;
+    font-size: 1.3rem;
+}
+#tour .tourdates .dates li span{
+    padding: 0 10px;
+}
+#tour .tourdates .dates li .city{
+    font-weight: 700;
+}
+#tour .tourdates .dates li .location{
+    font-size: 1rem;
+    font-weight: 300;
+}
+#tour .tourdates .dates li .date{
+    font-weight: 500;
+    color :#FFDC2C;
+}
+footer{
+    background:rgb(24, 18, 24);
+    position: relative;
+    z-index: 4;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Akronim', cursive;
+    color:rgb(254, 235, 137);
+}
+
+  /*Desktop*/
+@media only screen and (max-width: 1215px) {
+    header{
+        width: 92%;
+    }
+    #top-section .band-img{
+        width: 36%;
+    }
+}
+/*Tablet*/
+@media only screen and (max-width: 1023px) {
+    header{
+        width: 90%;
+    }
+    #tour .top-img{
+        background-size: 150%;
+        height: 250px;
+    }
+    #bio p{
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+    #bio .logo-centered img{
+        width: 100%;
+        display: flex;
+        margin-bottom: -20px;
+    }
+    #music .info{
+        width: 100%;
+    }
+    #music .album-cover{
+        display: none;
+    }
+    #tour .tourdates .title{
+        margin: -35px 0 50px;
+    }
+    #tour .tourdates .dates{
+        box-sizing: border-box; 
+        margin-bottom: -30px;
+    }
+    #tour .tourdates .dates{
+        display: inline-block;
+    }
+    #tour .tourdates .dates li{
+        line-height: 60px;
+    }
+    #tour .tourdates .dates{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 35px;
+    }
+}
+/*Mobile */
+@media only screen and (max-width: 767px) {
+    #top-section .band-img img{
+        width: 250%;
+        filter: contrast(90%);
+        margin-bottom: -8px;
+    }  
+    #top-section .band-img{
+        width: 45%;
+    }
+    #tour .top-img{
+        background-size: 100%;
+        height: 123px;
+    }
+    #bio{
+        display: inline;
+        background: none;
+    }
+    #bio .container{
+        display: inline;
+    }
+    #bio p{
+        color: white;
+        align-self: center;
+        line-height: 1.8;
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 0 70px 25px 50px;
+    }
+    #bio .logo-centered{
+        width: 110%;
+        display: flex;
+        -ms-flex-pack: right;
+        justify-content: right;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+    #bio .logo-centered img{
+        width: 89%;
+        display: flex;
+        margin-bottom: -20px;
+    }
+    #media {
+        padding: 50px 50px 15px 50px;
+    }
+    #media .title{
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    #media .videos{
+        display: inline;        
+    }
+    #media .videos .video{
+        margin-bottom: 35px;
+        width: 100%;       
+    }
+    #music .info{
+        width: 100%;
+    }
+    #music .album-cover{
+        width: 100%;
+        display: none;
+    }
+    #tour .tourdates .title{
+        margin: -20px 0 50px;
+    }
+    #tour .tourdates .dates{
+        box-sizing: border-box; 
+        margin-bottom: -30px;
+    }
+    #tour .tourdates .dates{
+        display: inline;
+    }
+    #tour .tourdates .dates li{
+        line-height: 60px;
+    }
+    footer{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 579px) {
+    header .logo{
+        display: none;
+    }
+    header nav a{
+        font-size: 0.9rem;
+    }
+    #top-section .band-img img {
+        width: 400%;
+        height: 85vh;
+        margin-left: -200px;
+    }
+    #tour .top-img{
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 431px) { 
+    header nav a{
+        font-size: 0.9rem;
+    }
+    #top-section .band-img img {
+        width: 260%;
+        height: 175vh;
+        margin-bottom: -8px;
+    }
+    #top-section .floating-img{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 75vh;
+    }
+    #media .videos .video{
+        margin-bottom: 15px;
+    }
+    #media .title{
+        margin-bottom: 40px;
+    }
+}
